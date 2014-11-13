@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Download Demo</title>
+  <style type="text/css">
+    #initialContent {
+      display: none;
+    }
+    textarea {
+      height: 500px;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demo to show downloading a generated HTML file as .doc file works</h1>
+  <form onsubmit="return false">
+    <label for="filename">Filename: </label>
+    <input type="text" id="filename" value="default" /><span>.doc</span>
+    <br>
+    <textarea id="content"></textarea>
+    <br>
+    <button id="download">Download</button>
+  </form>
+
+  <div id="initialContent">
+    <h1>Demo</h1>
+    <h2>This is a demo of saving HTML as a word document</h2>
+    <p>This is written in HTML dynamically with JavaScript. JavaScript tells the browser to save this as a <code>.doc</code> file type. When
+      Microsoft Word opens it, the file will be displayed as a Word document.</p>
+    <p> You can include lists:</p>
+    <ol>
+      <li>Like</li>
+      <li>This</li>
+    </ol>
+    <p> And bullets:</p>
+    <ul>
+      <li>Like</li>
+      <li>This</li>
+    </ul>
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
